@@ -1,0 +1,237 @@
+main {
+  background-color: #12151d;
+  padding: 25px 200px;
+  border-bottom: 1px solid #202533;
+}
+
+main .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .navbar ul li .logo {
+  font-size: 40px;
+  color: #fff;
+}
+
+main .navbar .navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+main .navbar .navbar-right ul li .link {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 20px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+main .navbar .navbar-right ul li .link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.sign-up {
+  margin: 10px 20px 5px 20px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.log-in {
+  margin: 5px 20px 10px 20px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.first-section {
+  background-color: #12151d;
+  height: 506px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 200px;
+  border-bottom: 1px solid #202533;
+}
+
+.first-section .main-section_left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-section .main-section_left h1 {
+  font-size: 58px;
+  color: #fff;
+  text-align: start;
+}
+
+.first-section .main-section_left .dashboard {
+  margin: 30px 20px 0px 0px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.first-section .main-section_left .dashboard:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.first-section .main-section_right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: relative;
+}
+
+.first-section .main-section_right .img-blue {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: 100%;
+}
+
+.first-section .main-section_right .img-purple {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: 100%;
+}
+
+.first-section .main-section_right .img-teal {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: 100%;
+}
+
+.second-section {
+  background-color: #12151d;
+  color: #fff;
+  padding: 100px 200px 100px 200px;
+}
+
+.second-section h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 40px;
+}
+
+.second-section .icon-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.second-section .icon-card div {
+  width: 300px;
+}
+
+.second-section .icon-card div h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.second-section .icon-card div h4 {
+  color: #c5c5c5;
+  font-weight: 400;
+}
+
+.video {
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.bg-opacity {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  margin-top: -500px;
+}
+
+#myVideo {
+  width: 100%;
+}
+
+footer {
+  padding: 100px 200px 50px 200px;
+  background-color: #12151d;
+}
+
+footer .d-flex_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .d-flex_footer li {
+  display: block;
+}
+
+footer .d-flex_footer li .about_footer {
+  color: #fff;
+}
+
+footer .d-flex_footer li .contact_footer {
+  color: #fff;
+}
+
+footer .copyright h6 {
+  margin-top: 50px;
+  text-align: center;
+  color: #707070;
+}
+/*# sourceMappingURL=home.component.css.map */

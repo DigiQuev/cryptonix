@@ -1,0 +1,4 @@
+eth : https://api.coingecko.com/api/v3/coins/0-5x-long-ethereum-token/market_chart?vs_currency=eur&days=90&interval=daily
+btc : https://api.coingecko.com/api/v3/coins/0-5x-long-bitcoin-token/market_chart?vs_currency=eur&days=90&interval=daily
+ltc : https://api.coingecko.com/api/v3/coins/1x-short-litecoin-token/market_chart?vs_currency=eur&days=90&interval=daily
+dash : https://api.coingecko.com/api/v3/coins/dash/market_chart?vs_currency=eur&days=90&interval=daily
