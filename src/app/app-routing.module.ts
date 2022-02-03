@@ -4,9 +4,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'home', pathMatch:'full'},
   { path : 'home', component : HomeComponent},
   { path : 'dashboard', component : DashboardComponent},
-  { path: 'Login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }];
+  { path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
