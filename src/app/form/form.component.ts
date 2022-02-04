@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-form',
@@ -12,7 +14,7 @@ export class FormComponent implements OnInit {
   loginControl = new FormControl();
   passwordControl = new FormControl();
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +30,7 @@ export class FormComponent implements OnInit {
       login,
       password
     }).subscribe((loginResult: any) => {
+      this.router.navigateByUrl('/dashboard')
       localStorage.setItem('id', loginResult.id);
     });
 

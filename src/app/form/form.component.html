@@ -1,5 +1,5 @@
 <section class="section-left_illustration">
-  <img class="img_left" src="src\assets\img\photo-1642298014452-b9a8c4bf2026.jfif" alt="">
+  <img class="img_left" src="https://images.unsplash.com/photo-1642298014452-b9a8c4bf2026?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
 </section>
 <section class="section-right-login">
   <div class="d-block">
@@ -10,11 +10,11 @@
           <hr>
           <div>
               <h5 class="email">Email address</h5>
-              <input class="email_input" type="text" placeholder="name@mail.com">
+              <input class="email_input" [formControl]="loginControl" type="text" placeholder="name@mail.com">
           </div>
           <div>
               <h5 class="password">Password</h5>
-              <input class="password_input" type="password" placeholder="password">
+              <input class="password_input" [formControl]="passwordControl" type="password" placeholder="password">
           </div>
           <hr>
           <div class="btn">

@@ -1,1 +1,400 @@
-<div echarts [options]="options" [merge]="updateOptions" class="demo-chart"></div>
+
+
+    <header>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#" class="logo d-flex">
+                        Cryptonix
+                    </a>
+                </li>
+            </ul>
+           
+                <ul>
+                    <li>
+                        <a href="#">
+                            <button class="sign-up">
+                                Dashboard
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="log-in">
+                                Pierre.Q
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+       
+    </header>
+    
+<div class="body">    
+    <div>
+
+        <div class="main-div d-flex">
+            <div class="div-left">
+                
+                <div class="top d-flex">
+                    <div class="money">
+                        <div class="top-money">
+                            <div class="transaction-money">
+                                2,345 <br>
+                               <span class="color-trans-money">Transactions</span>
+                            </div>
+                            <div class="wallet-money">
+                                5 <br>
+                                <span class="wallets-size">Wallets</span>
+                            </div>
+                        </div>
+        
+                        <div class="mid-money">
+                            <div class="balance">
+                                3.4330 <span id="eur">EUR</span>
+                            </div>
+                        </div>
+        
+                        <div class="bottom-money d-flex">
+                            <div class="pourcentage">
+                                2.7995 <span id="more-money">+12%</span>
+                            </div>
+                            <div class="buy">
+                                <button id="button-money">buy</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="wallet">
+                    <div class="crypto d-flex">
+                        <a href="#" id="btc">
+                            <div class="btc-bg">
+                                <div class="top-btc d-flex">
+                                    <div class="txt-btc">
+                                        <p>BTC</p>
+                                    </div>
+                                    <div class="logo-btc">
+                                        <img style="width: 30px; color: #fff;" src="https://cdn-icons-png.flaticon.com/512/4771/4771636.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom-btc d-flex">
+                                    <p>Bitcoin</p>
+                                <p>2.355796</p>
+                                </div>
+                            </div>
+                        </a>
+                            
+        
+        
+        
+        
+        
+                            <a href="#" id="eth">
+                                <div class="eth-bg">
+                                    <div class="top-eth d-flex">
+                                        <div class="txt-eth">
+                                            <p>ETH</p>
+                                        </div>
+                                        <div class="logo-eth">
+                                            <img style="width: 30px; color: #fff;" src="https://cdn-icons-png.flaticon.com/512/3985/3985585.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-eth d-flex">
+                                        <p>Etherum</p>
+                                    <p>7.187468</p>
+                                    </div>
+                                </div>
+                            </a>
+        
+        
+        
+        
+        
+        
+                            <a href="#" id="ltc">
+                                <div class="ltc-bg">
+                                    <div class="top-ltc d-flex">
+                                        <div class="txt-ltc">
+                                            <p>LTC</p>
+                                        </div>
+                                        <div class="logo-ltc">
+                                           <img style="width: 30px; color: #fff;" src="https://cdn-icons-png.flaticon.com/512/1490/1490823.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-ltc d-flex">
+                                        <p>Litecoin</p>
+                                    <p>4.657515</p>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                            <a href="#" id="dash">
+                                <div class="dash-bg">
+                                    <div class="top-dash d-flex">
+                                        <div class="txt-dash">
+                                            <p style="margin-left: 2px;">DASH</p>
+                                        </div>
+                                        <div class="logo-dash">
+                                           <img style="width: 30px; color: #fff; margin-right: 5px;" src="https://cdn-icons-png.flaticon.com/512/825/825534.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-dash d-flex">
+                                        <p>Dashcoin</p>
+                                    <p>0.356784</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom-crypto d-flex">
+                            <div class="stat-left">
+                                <p id="title">Market Activity</p>
+                                <p>USA</p>
+                                <div class="container">
+                                  <div class="skills usa">90%</div>
+                                </div>
+                                
+                                <p>France</p>
+                                <div class="container">
+                                  <div class="skills france">80%</div>
+                                </div>
+                                
+                                <p>Canada</p>
+                                <div class="container">
+                                  <div class="skills canada">65%</div>
+                                </div>
+                                
+                               
+                            </div>
+                            <div class="stat-right ">
+                                <div class="selector d-flex">
+                                    <div class="btc-selector d-flex"> 
+                                        <p>Wallet</p>
+                                        <select name="crypto" id="crypto-select">
+                                            <option value="btc">BTC</option>
+                                            <option value="eth">ETH</option>
+                                            <option value="dash">DASH</option>
+                                            <option value="card">CRD</option>
+                                            <option value="doge">doge</option>
+                                            <option value="klay">KLAY</option>
+                                        </select>
+                                    </div>
+        
+                                    <div class="btc-selector d-flex">
+                                        <p>Amount</p>
+                                        <input type="number" id="crypto-send" name="tentacles"
+                                        min="0.0001" max="100" placeholder="0.00">
+                                    </div>
+                                </div>
+                                <div class="selector-mid d-flex">
+                                    <p id="send">Send To</p>
+                                    <input type="text" id="name" name="name" required
+           minlength="0" maxlength="100" size="33">
+                                </div>
+                                
+                                
+                            </div>
+        
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                
+        
+                <div class="bottom d-flex">
+                    <div class="graph">
+                        <div echarts [options]="options" [merge]="updateOptions" class="demo-chart"></div>
+                    </div>
+        
+                    <div class="market">
+                         <div class="top-market d-flex">
+                            <div class="right-market">
+                                <p>Markets</p>
+                            </div>
+                            <div class="left-market d-flex">
+                               <a href="#"><button class="one-span">USD</button></a>
+                               <a href="#"><button>USD</button></a>
+                               <a href="#"><button>USD</button></a>
+                            </div>
+                         </div>
+        
+        
+                         <div class="bottom-market">
+                             <div class="first-market d-flex">
+                                <div class="right-transfer">
+                                    <div class="top-transfer">
+                                        <p>DASH/EUR</p>
+                                        
+                                    </div>
+                                    <div class="bottom-transfer">
+                                        <p>0.0834 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="left-graph">
+                                    <img style="width: 70px; filter: saturate(100%);" src="https://www.pngall.com/wp-content/uploads/10/Line-Chart-Vector-PNG-Cutout.png"/>                           
+                                 </div>
+                             </div>
+        
+                             <hr class="line">
+        
+                             <div class="first-market d-flex">
+                                <div class="right-transfer">
+                                    <div class="top-transfer">
+                                        <p>LTC/EUR</p>
+                                        
+                                    </div>
+                                    <div class="bottom-transfer">
+                                        <p>1.5647 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="left-graph">
+                                    <img style="width: 70px; filter: saturate(100%);" src="https://www.pngall.com/wp-content/uploads/10/Line-Chart-Vector-PNG-Cutout.png"/>                           
+                                 </div>
+                             </div>
+        
+                             <hr class="line">
+        
+                             <div class="first-market d-flex">
+                                <div class="right-transfer">
+                                    <div class="top-transfer">
+                                        <p>BTC/EUR</p>
+                                        
+                                    </div>
+                                    <div class="bottom-transfer">
+                                        <p>0.0098 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="left-graph">
+                                    <img style="width: 70px; filter: saturate(100%); -webkit-transform: scaleX(-1);
+                                    transform: scaleX(-1) " src="https://www.pngall.com/wp-content/uploads/10/Line-Chart-Vector-PNG-Cutout.png"/>                           
+                                 </div>
+                             </div>
+        
+                             <hr class="line">
+        
+                             <div class="first-market d-flex">
+                                <div class="right-transfer">
+                                    <div class="top-transfer">
+                                        <p>USD/EUR</p>
+                                        
+                                    </div>
+                                    <div class="bottom-transfer">
+                                        <p>64.2568 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="left-graph">
+                                    <img style="width: 70px; filter: saturate(100%);" src="https://www.pngall.com/wp-content/uploads/10/Line-Chart-Vector-PNG-Cutout.png"/>                           
+                                 </div>
+                             </div>
+        
+                             <hr class="line">
+        
+                             <div class="first-market d-flex">
+                                <div class="right-transfer">
+                                    <div class="top-transfer">
+                                        <p>ETH/EUR</p>
+                                        
+                                    </div>
+                                    <div class="bottom-transfer">
+                                        <p>0.8795 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="left-graph">
+                                    <img style="width: 70px; filter: saturate(100%); -webkit-transform: scaleX(-1);
+                                    transform: scaleX(-1)" src="https://www.pngall.com/wp-content/uploads/10/Line-Chart-Vector-PNG-Cutout.png"/>                           
+                                 </div>
+                             </div>
+        
+                             <hr class="line">
+                             
+                             
+                         </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="div-transaction">
+                <div class="nav-trans d-flex">
+                    <div class="title">
+                        Transactions
+                    </div>
+                    <div class="all" id="#">
+                        All
+                    </div>
+                    <a href="#" class="link">
+                        <div class="send">
+                            Send
+                        </div>
+                    </a>
+                    <div class="recent" id="#">
+                        Recent
+                    </div>
+                </div>
+        
+                
+                <div class="trans-btc">
+                    <div class="flex-trans">
+                        <div class="date">
+                            16.23, 30 jan 2022
+                        </div>
+                        <div class="price">
+                            <span class="span-btc">⟶ </span>0.1 BTC
+                        </div>
+                    </div>
+                    <div class="wallet-trans">
+                        0x7A3797Da7e3Cf509bf851d7Cdc34f80700839C9F
+                    </div>
+                </div>
+                <div class="trans-btc">
+                    <div class="flex-trans">
+                        <div class="date">
+                            16.23, 30 jan 2022
+                        </div>
+                        <div class="price">
+                            <span class="span-btc">⟶ </span>0.1 BTC
+                        </div>
+                    </div>
+                    <div class="wallet-trans">
+                        0x7A3797Da7e3Cf509bf851d7Cdc34f80700839C9F
+                    </div>
+                </div>
+                <div class="trans-btc">
+                    <div class="flex-trans">
+                        <div class="date">
+                            16.23, 30 jan 2022
+                        </div>
+                        <div class="price">
+                            <span class="span-btc">⟶ </span>0.1 BTC
+                        </div>
+                    </div>
+                    <div class="wallet-trans">
+                        0x7A3797Da7e3Cf509bf851d7Cdc34f80700839C9F
+                    </div>
+                </div>
+                <div class="trans-btc">
+                    <div class="flex-trans">
+                        <div class="date">
+                            16.23, 30 jan 2022
+                        </div>
+                        <div class="price">
+                            <span class="span-btc">⟶ </span>0.1 BTC
+                        </div>
+                    </div>
+                    <div class="wallet-trans">
+                        0x7A3797Da7e3Cf509bf851d7Cdc34f80700839C9F
+                    </div>
+                </div>
+                <div class="trans-btc">
+                    <div class="flex-trans">
+                        <div class="date">
+                            16.23, 30 jan 2022
+                        </div>
+                        <div class="price">
+                            <span class="span-btc">⟶ </span>0.1 BTC
+                        </div>
+                    </div>
+                    <div class="wallet-trans">
+                        0x7A3797Da7e3Cf509bf851d7Cdc34f80700839C9F
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
