@@ -31,7 +31,7 @@ export class DashboardComponent implements OnInit {
     // initialize chart options:
     this.options = {
       title: {
-        text: 'Dynamic Data + Time Axis'
+        text: 'Bitcoin'
       },
       tooltip: {
         trigger: 'axis',
