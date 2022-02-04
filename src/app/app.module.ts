@@ -13,6 +13,7 @@ import { FormComponent } from './form/form.component';
     AppComponent,
     HomeComponent,
     DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
