@@ -1,7 +1,25 @@
-<div class="form">
-  <form>
-    <input class="input" type="text" placeholder="login" [formControl]="loginControl" >
-    <input class="input" type="password" placeholder="password" [formControl]="passwordControl" >
-  </form>
-  <button (click)="connectUser()" >Connexion</button>
-</div>
+<section class="section-left_illustration">
+  <img class="img_left" src="/src/assets/img/photo-1642298014452-b9a8c4bf2026.jfif" alt="">
+</section>
+<section class="section-right-login">
+  <div class="d-block">
+      <div>
+          <div class="title">
+              <h1 class="login">Login</h1>
+          </div>
+          <hr>
+          <div>
+              <h5 class="email">Email address</h5>
+              <input class="email_input" type="text" placeholder="name@mail.com">
+          </div>
+          <div>
+              <h5 class="password">Password</h5>
+              <input class="password_input" type="text" placeholder="password">
+          </div>
+          <hr>
+          <div class="btn">
+              <button (click)="connectUser()" class="btn_login">login</button>
+          </div>
+      </div>
+  </div>
+</section>

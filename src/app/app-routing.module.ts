@@ -7,7 +7,8 @@ const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   { path : 'home', component : HomeComponent},
   { path : 'dashboard', component : DashboardComponent},
-  { path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule) }];
+  { path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule) },
+  { path: 'select-crypto', loadChildren: () => import('./select-crypto/select-crypto.module').then(m => m.SelectCryptoModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
