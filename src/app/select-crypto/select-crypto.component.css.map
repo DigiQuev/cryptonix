@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "select-crypto.component.scss"
+    ],
+    "names": [],
+    "file": "select-crypto.component.css"
+}
