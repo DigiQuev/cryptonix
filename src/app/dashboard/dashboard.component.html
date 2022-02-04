@@ -1,1 +1,4 @@
-<div  *ngIf="options.series"  echarts [options]="options" [merge]="updateOptions" class="demo-chart"></div>
+<app-chart *ngIf="crypto"  [prices]="crypto" ></app-chart>
+<app-chart *ngIf="crypto2" [prices]="crypto2" ></app-chart>
+<app-chart *ngIf="crypto3" [prices]="crypto3" ></app-chart>
+<app-chart *ngIf="crypto4" [prices]="crypto4" ></app-chart>
